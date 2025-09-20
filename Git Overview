@@ -1,1 +1,8 @@
-This is the Git Hub with Commands
+GIT is the Powerful tool for the Version Control
+GIT has more features if we want to go back to previous version we can easily
+#Skipping the Staging Area
+git commit -a -m "<Message>"
+#Git Log and Commmit Message in Single Line
+git log ---oneline
+#Steps to Generate the Key-gen File
+ssh-keygen -o
