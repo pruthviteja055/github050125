@@ -6,4 +6,9 @@ git commit -a -m "<Message>"
 git log ---oneline
 #Steps to Generate the Key-gen File
 ssh-keygen -o
-
+#Remote Repository
+git remote -v
+#To check the Tags
+git tag
+git tag -a v1.0 -m "<Message>"
+git show v1.0
