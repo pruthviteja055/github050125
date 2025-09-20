@@ -6,3 +6,4 @@ git commit -a -m "<Message>"
 git log ---oneline
 #Steps to Generate the Key-gen File
 ssh-keygen -o
+
