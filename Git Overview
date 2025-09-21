@@ -21,7 +21,11 @@ git switch <branch Name>
 git branch
 git branch --all # To see the data in local and even in the remote repository
 #To switch between the branches
+<<<<<<< HEAD
 git switch -
+=======
+git branch -
+>>>>>>> 24e6c2b31d4a9febd890f532b4e77f553f866ed7
 #To Delete the Feature Branch
 git branch -d <Branch Name>
 #To Push the Branch data to Repository
@@ -30,6 +34,10 @@ git push origin <Branch Name>
 git log --graph
 #To merge we should move to the main branch
 git merge <Branch Name>
+<<<<<<< HEAD
 git merge feature1
 #To add the files in the Single line Graph
 git rebase <Branch Name>
+=======
+git merge feature1
+>>>>>>> 24e6c2b31d4a9febd890f532b4e77f553f866ed7
