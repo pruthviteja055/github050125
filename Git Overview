@@ -21,7 +21,7 @@ git switch <branch Name>
 git branch
 git branch --all # To see the data in local and even in the remote repository
 #To switch between the branches
-git branch -
+git switch -
 #To Delete the Feature Branch
 git branch -d <Branch Name>
 #To Push the Branch data to Repository
