@@ -12,3 +12,22 @@ git remote -v
 git tag
 git tag -a v1.0 -m "<Message>"
 git show v1.0
+#To create and check branches
+git checkout -b <Branch Name>
+git switch --create <Branch Name>
+git switch -c <Branch Name> 
+git switch <branch Name>
+#To Show the total Branches
+git branch
+git branch --all # To see the data in local and even in the remote repository
+#To switch between the branches
+git branch -
+#To Delete the Feature Branch
+git branch -d <Branch Name>
+#To Push the Branch data to Repository
+git push origin <Branch Name>
+#To get more visual Representation
+git log --graph
+#To merge we should move to the main branch
+git merge <Branch Name>
+git merge feature1
