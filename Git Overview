@@ -31,3 +31,5 @@ git log --graph
 #To merge we should move to the main branch
 git merge <Branch Name>
 git merge feature1
+#To add the files in the Single line Graph
+git rebase <Branch Name>
