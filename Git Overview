@@ -32,3 +32,13 @@ git log --graph
 git merge <Branch Name>
 #To add the files in the Single line Graph
 git rebase <Branch Name>
+#Time travel can be done by moving to any Commit ID and the you can Start from there 
+git checkout <Commit ID>
+git checkout 0ec8e4671815bba2b590e954ff4e4c6339629309
+git checkout -b lite-version
+#If you are working on Feature branch but you did not commit anything so we can use the below command
+git stash
+git stash list
+#Git Fork is used to get some source project to your account attached
+#Git Pull Request : See you can pull some code make some changes and create a New Pull Request 
+#and owner of the file will merge the code and this is the way its done. See the Video before performing
