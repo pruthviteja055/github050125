@@ -7,15 +7,10 @@ Components of Infrastructure:
 ==============================
 
 Servers – Physical or virtual machines that run applications.
-
 Database – Systems used to store and manage data (e.g., MySQL, PostgreSQL).
-
 Storage – Persistent data storage (e.g., disks, cloud buckets).
-
 Security – Firewalls, authentication, access control, etc.
-
 Monitoring – Tools to observe performance, errors, uptime (e.g., Prometheus, Grafana).
-
 Network – Connectivity infrastructure (LAN, VPN, cloud VPC, etc.).
 ---------------------------------------------------------
 
@@ -26,16 +21,13 @@ On-Premise (Our Own Data Center)
 -----------------
 
 Hardware owned and managed by the organization.
-
 High control, but higher upfront costs and maintenance overhead.
 
 Cloud (Pay-As-You-Go Model)
 ----------------------
 
 Infrastructure provided by cloud vendors (AWS, Azure, GCP, etc.).
-
 You pay only for what you use.
-
 Scalable, flexible, and lower maintenance.
 
 
@@ -43,16 +35,13 @@ What is an Operating System (OS)?
 ----------------------------------
 
 --> An Operating System (OS) is software that acts as a mediator between the user and the computer hardware.
-
 --> It allows users to interact with computers and run programs.
-
 --> Without an OS, we cannot use any computer system.
-
 --> It provides an environment (platform) for users to operate and manage hardware and software resources.
 
 🛠️ Examples of tasks enabled by an OS:
-Opening applications like Notepad, Calculator, Browsers, etc.
 
+Opening applications like Notepad, Calculator, Browsers, etc.
 Managing files, memory, and peripheral devices.
 
 🌐 Types of Operating Systems in the Market
@@ -60,70 +49,49 @@ Managing files, memory, and peripheral devices.
 Common examples include:
 
 Windows
-
 Linux
-
 macOS
-
 Android
-
 iOS
 
 🪟 Windows Operating System
 ----------------------------------
 
 Developed by Microsoft (Founded by Bill Gates)
-
 GUI-based (Graphical User Interface)
-
 Primarily a single-user OS
-
 Commercial OS – requires paid licenses
-
 Lower built-in security – anti-virus software is often necessary
-
 Best suited for personal or home use, such as:
-
 Playing games
-
 Watching movies
-
 Internet browsing
-
 Storing files
-
 Attending online classes
 
 ❗ Note: Windows is not recommended for enterprise-level operations like application deployment or server hosting.
 -----------------------------------------------------------------
 🐧 Linux Operating System
 ============================
+
 Community-developed, free, and open source
-
 Supports multi-user environments
-
 Offers high security
-
 CLI-based (Command Line Interface), though some distros have GUIs
-
 Highly recommended for:
 
 Servers
-
 Application deployment
-
 Infrastructure setup
 
 💡 In real-time IT environments, Linux is the OS of choice for infrastructure and DevOps operations.
 
 📜 History of Linux
 =======================
+
 Created by Linus Torvalds
-
 Initially used UNIX OS, but faced limitations and his feedback was not accepted
-
 He discovered Minix OS, which aligned more closely with his ideas
-
 Linus modified Minix and created Linux
 
 Name Origin:
@@ -136,14 +104,11 @@ Lin(us) + Min(ux) = Linux
 After Linux was released as open source, many companies downloaded the source code and customized it to create their own versions, known as Linux Distributions.
 
 🔹 Popular Linux Distros:
+
 Amazon Linux
-
 Red Hat Enterprise Linux (RHEL)
-
 Ubuntu
-
 CentOS
-
 SUSE Linux
 
 There are over 200+ Linux distributions available today.
@@ -152,12 +117,10 @@ There are over 200+ Linux distributions available today.
 What is an Operating System and why do we need it?
 
 Windows OS – GUI, single-user, commercial, for personal use
-
 Linux OS – CLI, multi-user, open source, secure, for enterprise use
-
 History of Linux – Linus Torvalds' journey from UNIX to Linux
-
 Linux Distributions – Various flavors developed from the base Linux kernel
+
 =================================================================================
 
 class 2 : 9th June (Monday) 
@@ -176,11 +139,76 @@ Create a free tier AWS account (Video uploaded in course dashboard follow)
 
 Linux Files System
 -------------------
+Understanding the Folder Structure
+
+Explanation of System Directories
+
+Symbolic Links (Less Significant)
+
+/sbin -> /usr/sbin	System binaries for administrative commands (linked to /usr/sbin).
+/bin -> /usr/bin	Essential user binaries (linked to /usr/bin).
+/lib -> /usr/lib	Shared libraries and kernel modules (linked to /usr/lib).
+
+Important System Directories
+
+/boot	Stores files needed for booting the system (not relevant in containers).
+/usr	Contains most user-installed applications and libraries.
+/var	Stores logs, caches, and temporary files that change frequently.
+/etc	Stores system configuration files.
+
+User & Application-Specific Directories
+
+/home	Default location for user home directories.
+/opt	Used for installing optional third-party software.
+/srv	Holds data for services like web servers (rarely used in containers).
+/root	Home directory for the root user.
+
+Temporary & Volatile Directories
+
+/tmp	Temporary files (cleared on reboot).
+/run	Holds runtime data for processes.
+/proc	Virtual filesystem for process and system information.
+/sys	Virtual filesystem for hardware and kernel information.
+/dev	Contains device files (e.g., /dev/null, /dev/sda).
+
+Mount Points
+
+/mnt	Temporary mount point for external filesystems.
+/media	Mount point for removable media (USB, CDs).
+/data	Likely your mounted volume from Windows (C:/ubuntu-data).
+
 ==> Everything is represented as a file
 
      1) Directory File (Folder) (starts with d)
      2) Normal file/ ordinary ( starts with -)
      3) Link File ( starts with l)
+
+
+File management in Linux
+
+File and Directory Management
+ls – Lists files and directories in the current location.
+cd /path/to/directory – Changes the working directory.
+pwd – Prints the current working directory.
+mkdir new_folder – Creates a new directory.
+rmdir empty_folder – Removes an empty directory.
+rm file.txt – Deletes a file.
+rm -r folder – Deletes a folder and its contents.
+cp file1.txt file2.txt – Copies a file.
+cp -r dir1 dir2 – Copies a directory recursively.
+mv old_name new_name – Moves or renames a file or directory.
+
+File Viewing and Editing
+cat file.txt – Displays file content.
+tac file.txt – Displays file content in reverse order.
+less file.txt – Opens a file for viewing with scrolling support.
+more file.txt – Similar to less, but only moves forward.
+head -n 10 file.txt – Displays the first 10 lines of a file.
+tail -n 10 file.txt – Displays the last 10 lines of a file.
+nano file.txt – Opens a simple text editor.
+vi file.txt – Opens a powerful text editor.
+echo 'Hello' > file.txt – Writes text to a file, overwriting existing content.
+echo 'Hello' >> file.txt – Appends text to a file without overwriting.
 
 
 Linux Commands 
