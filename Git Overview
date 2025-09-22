@@ -8,6 +8,11 @@ git commit -m <Message Name>
 
 #Skipping the Staging Area
 git commit -a -m "<Message>"
+
+#Global Configuration 
+git config --global user.email "<Email ID>"
+git config --global user.name "<Name>"
+
 #Git Log and Commmit Message in Single Line
 git log --pretty=oneline
 #To get more visual Representation
