@@ -236,23 +236,18 @@ $ rm -rf <directory-name>
 $ rm -rf aws  --> To delete a directory/folder which has files in it
 
 -------------------------------------------------------
+
 $ ls --> display files present in current working directory
-
 $ ls -l --> display files present in current working directory in alphabetical order (a-z) one below the other
-
 $ ls -lr --> display files present in current working directory in alphabetical reverse order(z-a) one below the other
-
 $ ls -lt  --> display files present in current working directory which latest on top 
-
 $ ls -ltr ---> display files present in current working directory with old file on top
 
 
 --------------------------------------------------------
 
 $ rm <file-name>
-
 $ rm alien.txt --> Delete file which is named as alien
-
 $ ls -l
 
 
